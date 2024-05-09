@@ -1,0 +1,435 @@
+
+.logo{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #050DCA;
+}
+
+.logoTotal {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoIMG {
+    width: 40%;
+}
+
+.logoNOM {
+    width: 40%;
+    text-align: center;
+
+}
+
+.logoIMG img{
+    width: 70%;
+}
+
+.navbar {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.item {
+    text-align: center;
+    margin: .5em;
+}
+.item a {
+    text-decoration: none;
+    color: ghostwhite;
+    cursor: pointer;
+    font-size: .7em
+}
+
+
+
+body {
+    width: 100%;
+    background:black;
+    color: white;
+    font-size: 40px;
+    overflow-x:hidden;
+    font-family: Inter, Arial, sans-serif;
+}
+
+  .slider img{
+    width: 100%;
+    height:600px;
+    filter: blur (1.5rem)
+}
+ .gallery{
+   display:grid;
+   grid-template-columns: repeat(3, 1fr);
+ }
+
+ .titulo1{
+    font-size: 1em;
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 1px;
+
+
+}
+
+.texto-t1 p{
+text-align: center;
+margin-top: 10vh;
+margin-left: 40px;
+margin-right: 60px;
+margin-bottom: 10vb;
+font-size: 0.7em;
+line-height: 50px;
+}
+
+.cuadrado-ids{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.fotos-servicios img{
+    width:40%;
+    justify-content: space-between;
+}
+
+
+
+.ids-esquema img{
+    width: 100%;
+}
+
+.t-i{
+    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 10vb;
+    justify-content: space-between;
+
+
+}
+
+.cuadro-ids{
+   background-color: #cdcdcd;
+}
+
+.imagen5{
+    width: 40%;
+    margin-right: 50px;
+
+}
+    /* .ids-expl{
+
+} */
+
+
+.titulo2{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding: 1px;
+}
+
+.navbar2{
+    background-color: white;
+    padding: 5px;
+
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row{
+    display: flex;
+}
+.cuadrado{
+    width: 500px;           /* Ancho de 150 píxeles */
+  height: 300px;          /* Alto de 150 píxeles */
+  background: blue ;        /* Fondo de color rojo */
+  border: 1px solid #000;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+}
+.titulo-cuadrado{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.imagen-cuadrado{
+    width: 150px;
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+.texto-cuadrado1{
+    text-align:center;
+    margin-top: -130px;
+    font-size: 20px;
+    margin-left: 170px;
+    margin-right: 10px;
+}
+.texto-cuadrado2{
+    text-align:center;
+    margin-top: -75px;
+    font-size: 20px;
+    margin-left: 175px;
+    margin-right: 10px;
+}
+
+.texto-cuadrado3{
+    text-align:center;
+    margin-top: -80px;
+    font-size: 20px;
+    margin-left: 180px;
+    margin-right: 10px;
+}
+
+.texto-cuadrado4{
+    text-align:center;
+    margin-top: -70px;
+    font-size: 20px;
+    margin-left: 180px;
+    margin-right: 10px;
+}
+.titulo4{
+  text-align: center;
+  background-color: darkblue;
+}
+.cuadrado5{
+     width: 60%;
+    height: 120px;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+    display: flex;
+    margin-left: 275px;
+
+
+
+}
+.texto7{
+    color: black;
+    background-color: darkblue;
+    font-size: 30px;
+
+
+}
+
+.fondo{
+    background-image: url(../img/imagen5.png);
+
+     /* background-image: url('fondo.png'); */
+    /* background: crimson; */
+
+}
+
+.titulo5{
+    text-align: center;
+
+
+
+}
+
+.alo{
+   text-align: center;
+   font-size: 30px;
+   line-height: 2.5;
+   margin-left: 300px;
+   margin-right: 300px;
+}
+
+
+
+/* Estilos para la sección "Cómo Contactarnos" */
+.titulo6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto en negro */
+    padding: 20px; /* Agregamos un padding para evitar que el contenido se ajuste a los bordes */
+    position: relative; /* Ajusta la posición del botón relativa a este contenedor */
+}
+
+.titulo6 div {
+    display: flex;
+    justify-content: space-between; /* Distribuir los elementos con espacio entre ellos */
+    margin-top: 60px; /* Espacio entre el título y el primer elemento */
+}
+
+.titulo6 div button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contacto-item p {
+    font-size: 18px; /* Tamaño de fuente de 16px */
+}
+
+
+.imagen-container {
+    width: 360px; /* Ancho del contenedor de imagen */
+    height: 250px; /* Altura del contenedor de imagen */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-left: 85%;/* Margen izquierdo */
+    margin-right: 50%; /* Margen derecho */
+}
+
+.titulo6 h3 {
+    font-size: 60px; /* Tamaño de fuente de 60px */
+    margin-bottom: 0px; /* Espacio de 100px entre el título y las imágenes */
+}
+
+
+.contacto-container {
+    display: flex;
+    justify-content: center; /* Centramos los elementos horizontalmente */
+    gap: 50px; /* Espacio entre los elementos */
+    margin-top: 20px; /* Espacio desde la sección anterior */
+}
+
+.contacto-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-container img {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    max-height: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    width: auto; /* Establecemos el ancho automático para mantener la proporción de la imagen */
+    height: auto; /* Establecemos la altura automática para mantener la proporción de la imagen */
+}
+
+
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 20px; /* Añade más espacio arriba y abajo */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 97%;
+}
+
+
+
+.footer-table {
+    width:100%; /* Reducimos el ancho de la tabla */
+    margin:auto; /* Centramos la tabla en el footer */
+    border-collapse: collapse;
+    border: 2px solid black;
+
+}
+
+.footer-table td {
+    width: 25%; /* Distribuimos el ancho de las celdas */
+    background-color:#050DCA;
+    padding: 20px;
+    border: 1px solid gray; /* Añadimos bordes a las celdas */
+    text-align: center; /* Centramos el texto en las celdas */
+}
+
+.footer-table a {
+    text-decoration: none;
+    color: white;
+    font-size:32px;
+}
+
+
+
+/* CSS DE LAS FAQS */
+
+.container-faqs {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .faq {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .faq h2 {
+            margin-top: 0;
+            font-size: 18px; /* Tamaño 18 */
+            color: #001f3f; /* Azul marino */
+        }
+
+        .faq p {
+            font-size: 12px; /* Tamaño 12 */
+            color: #000; /* Negro */
+        }
+
+
+
+
+
+
+
+/*CSS DE POLITICAS DE PRIVACIDAD   */
+.politicas {
+    max-width:90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:9033FF;
+
+
+}
+
+.politicas h2 {
+    font-size:45px;
+}
+
+.politicas p {
+    font-size:28px;
+}
+
+.politicas .politicas {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.politicas .politicas h2 {
+    margin-top: 0;
+    font-size: 18px; /* Tamaño 18 */
+    color: #001f3f; /* Azul marino */
+}
+
+.politicas .politicas p {
+    font-size: 12px; /* Tamaño 12 */
+    color: #000; /* Negro */
+}

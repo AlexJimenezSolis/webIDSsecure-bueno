@@ -1,0 +1,93 @@
+{% load static  %}
+
+{% block content  %}
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static '/styles/main.css' %}">
+    <meta charset="UTF-8">
+    <title>Politicas de Privacidad</title>
+</head>
+<body>
+<div class="logo">
+            <div class="logoTotal">
+                <div class="logoIMG">
+                    <img src="{% static 'img/logo2.png' %}" alt=""  >
+                </div>
+                <div class="logoNOM">
+                    <p>IDSecure</p>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <div class="item">
+                    <a href="{% url 'home' %}#nostros">NOSOTROS</a>
+                </div>
+                <div class="item">
+                    <a href="{% url 'home' %}#objetivos">OBJETIVOS</a>
+                </div>
+                <div class="item">
+                    <a href="{% url 'home' %}#servicios">SERVICIOS</a>
+                </div>
+            </nav>
+        </div
+
+</div>
+
+<div class="container-politicas">
+    <h1>Política de Privacidad</h1>
+    <p>En IDSecure, nos comprometemos a proteger la privacidad de nuestros clientes y usuarios. Esta Política de Privacidad describe cómo recopilamos, usamos y protegemos la información personal que obtenemos a través de nuestro sitio web y nuestros servicios de instalación y configuración de sistemas de detección de intrusos (IDS) y firewalls.</p>
+
+    <div class="politicas" id="pregunta1">
+        <h2>¿Qué información recopilamos?</h2>
+        <p>Recopilamos información personal cuando los usuarios nos proporcionan datos durante el proceso de solicitud de servicios. Esto puede incluir nombres, direcciones de correo electrónico, información de contacto y detalles relacionados con la red de la empresa donde se instalarán los sistemas de seguridad.</p>
+    </div>
+
+    <div class="politicas" id="pregunta2">
+        <h2>¿Cómo utilizamos la información recopilada?</h2>
+        <p>La información recopilada se utiliza para brindar los servicios solicitados por los clientes, incluida la instalación y configuración de IDS y firewalls. Además, podemos utilizar la información para comunicarnos con los clientes sobre su solicitud, proporcionar actualizaciones sobre nuestros servicios o enviar información relevante sobre seguridad cibernética.</p>
+    </div>
+
+    <div class="politicas" id="pregunta3">
+        <h2>¿Compartimos la información con terceros?</h2>
+        <p>Respetamos la privacidad de nuestros clientes y no compartimos su información personal con terceros, excepto cuando sea necesario para cumplir con los servicios solicitados o requerido por ley.</p>
+    </div>
+
+    <div class="politicas" id="pregunta4">
+        <h2>¿Cómo protegemos la información personal?</h2>
+        <p>Implementamos medidas de seguridad adecuadas para proteger la información personal de nuestros clientes contra accesos no autorizados, uso indebido o divulgación. Esto incluye el uso de tecnologías de cifrado, restricciones de acceso y procedimientos de seguridad física y electrónica.</p>
+    </div>
+
+    <div class="politicas" id="pregunta5">
+        <h2>¿Cómo pueden los usuarios acceder y actualizar su información personal?</h2>
+        <p>Los usuarios pueden acceder a su información personal proporcionada y actualizarla comunicándose con nuestro equipo de atención al cliente. También pueden solicitar la eliminación de su información personal de nuestra base de datos, sujeto a cualquier obligación legal o contractual de retención de datos.</p>
+    </div>
+
+    <div class="politicas" id="pregunta6">
+        <h2>¿Cómo se comunicarán los cambios en nuestra Política de Privacidad?</h2>
+        <p>En caso de realizar cambios significativos en nuestra Política de Privacidad, notificaremos a los usuarios mediante un aviso en nuestro sitio web o por correo electrónico antes de que los cambios entren en vigencia.</p>
+    </div>
+
+    <div class="politicas" id="pregunta7">
+        <h2>¿Cómo pueden los usuarios contactarnos para realizar preguntas o preocupaciones sobre privacidad?</h2>
+        <p>Los usuarios pueden ponerse en contacto con nosotros en cualquier momento si tienen preguntas o inquietudes sobre nuestra Política de Privacidad o nuestras prácticas de privacidad en general. Pueden hacerlo enviando un correo electrónico a [correo electrónico de contacto] o utilizando la información de contacto proporcionada en nuestro sitio web.</p>
+    </div>
+</div>
+
+
+</body>
+<footer>
+    <table class="footer-table">
+        <tr>
+            <td><a href="{% url 'politicas' %}">Políticas de privacidad</a></td>
+            <td><a href="{% url 'faqs' %}">FAQs</a></td>
+            <td><a href="{% url 'home' %}#contactos">Contacto</a></td>
+            <td><a href="{% url 'home' %}">Home</a></td>
+        </tr>
+    </table>
+</footer>
+
+
+</html>
+
+{% endblock %}

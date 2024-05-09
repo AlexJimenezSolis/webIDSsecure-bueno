@@ -1,0 +1,113 @@
+
+
+{% load static  %}
+
+{% block content  %}
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static '/styles/main.css' %}">
+    <meta charset="UTF-8">
+    <title>FAQS</title>
+
+</head>
+<body>
+<div class="logo">
+            <div class="logoTotal">
+                <div class="logoIMG">
+                    <img src="{% static 'img/logo2.png' %}" alt=""  >
+                </div>
+                <div class="logoNOM">
+                    <p>IDSecure</p>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <div class="item">
+                    <a href="{% url 'home' %}#nostros">NOSOTROS</a>
+                </div>
+                <div class="item">
+                    <a href="{% url 'home' %}#objetivos">OBJETIVOS</a>
+                </div>
+                <div class="item">
+                    <a href="{% url 'home' %}#servicios">SERVICIOS</a>
+                </div>
+            </nav>
+        </div>
+
+</div>
+<div class="container-faqs">
+        <h1>Preguntas Frecuentes</h1>
+<div class="faq" id="pregunta1">
+    <h2>¿Qué es un firewall?</h2>
+    <p>Un firewall es un dispositivo o software que actúa como una barrera entre una red privada y el resto de Internet, controlando el tráfico de red según reglas predefinidas. Su función principal es proteger la red al filtrar y bloquear el tráfico no autorizado, como los ataques de hackers, malware y otras amenazas.</p>
+</div>
+
+<div class="faq" id="pregunta2">
+    <h2>¿Por qué es importante tener un firewall en mi red?</h2>
+    <p>Tener un firewall en tu red es crucial para protegerla contra diversas amenazas cibernéticas. El firewall ayuda a prevenir accesos no autorizados a tu red, filtrando el tráfico malicioso y bloqueando ataques dirigidos a tus sistemas. Además, permite controlar y monitorear el tráfico de red, lo que ayuda a detectar actividades sospechosas y a tomar medidas preventivas.</p>
+</div>
+
+<div class="faq" id="pregunta3">
+    <h2>¿Qué es un IDS (Sistema de Detección de Intrusos)?</h2>
+    <p>Un IDS (Sistema de Detección de Intrusos) es un sistema de seguridad diseñado para detectar y responder a actividades anómalas o maliciosas en una red o sistema informático. Funciona monitoreando y analizando el tráfico de red en busca de patrones de comportamiento sospechosos o firmas conocidas de ataques. Cuando se detecta una actividad potencialmente peligrosa, el IDS genera alertas para notificar a los administradores para que puedan tomar medidas correctivas.</p>
+</div>
+
+<div class="faq" id="pregunta4">
+    <h2>¿Cómo puedo configurar un firewall y un IDS en mi red?</h2>
+    <p>La configuración de un firewall y un IDS puede variar según las necesidades específicas de tu red y los dispositivos o software que estés utilizando. En general, es importante seguir las mejores prácticas de seguridad y personalizar la configuración según las amenazas conocidas y el entorno de red. Se recomienda consultar la documentación proporcionada por el fabricante y buscar orientación de profesionales de seguridad cibernética calificados para garantizar una configuración adecuada y efectiva.</p>
+</div>
+
+<div class="faq" id="pregunta5">
+    <h2>¿Cuáles son los tipos de firewall disponibles?</h2>
+    <p>Existen varios tipos de firewall, incluyendo firewall de red, firewall de aplicación y firewall de host. El firewall de red opera a nivel de red y controla el tráfico entrante y saliente según reglas definidas. El firewall de aplicación inspecciona el tráfico a nivel de aplicación y puede aplicar políticas de seguridad específicas a aplicaciones individuales. El firewall de host reside en un dispositivo o sistema y protege ese dispositivo o sistema específico al controlar el tráfico que entra y sale de él.</p>
+</div>
+
+<div class="faq" id="pregunta6">
+    <h2>¿Cuál es la diferencia entre un firewall y un IDS?</h2>
+    <p>La principal diferencia entre un firewall y un IDS (Sistema de Detección de Intrusos) radica en su enfoque y funcionalidad. Mientras que un firewall actúa como una barrera de seguridad que controla y filtra el tráfico de red basado en reglas predefinidas, un IDS monitorea y analiza el tráfico en busca de actividades anómalas o maliciosas. Mientras que un firewall es proactivo y puede bloquear el tráfico no autorizado, un IDS es reactivo y genera alertas cuando se detecta una actividad sospechosa para que los administradores puedan investigar y responder a la amenaza.</p>
+</div>
+
+<div class="faq" id="pregunta7">
+    <h2>¿Qué es un IPS (Sistema de Prevención de Intrusiones)?</h2>
+    <p>Un IPS (Sistema de Prevención de Intrusiones) es un sistema de seguridad diseñado para detectar y bloquear activamente actividades maliciosas o anómalas en una red o sistema informático. A diferencia de un IDS que solo genera alertas, un IPS puede tomar medidas preventivas, como bloquear o modificar el tráfico en tiempo real para detener un ataque en curso. Un IPS puede trabajar en conjunto con un firewall y un IDS para proporcionar una defensa multicapa contra las amenazas cibernéticas.</p>
+</div >
+
+
+    <div class="faqformulario" id="formulario">
+        <h2>¿No hemos respondido todas tus preguntas?</h2>
+        <p>Rellena el formulario y déjanos tu pregunta. Te responderemos mediante correo electrónico</p>
+        <form action="{% url 'guardar_pregunta' %}" method="post">
+         {% csrf_token %}
+         <label for="correo">Tu correo electrónico:</label>
+         <input type="email" id="correo" name="correo" required>
+         <br>
+         <br>
+            <label for="pregunta">Tu pregunta:</label>
+            <textarea id="pregunta" name="pregunta" rows="2"  required></textarea>
+         <br>
+         <br>
+            <button type="submit">Enviar pregunta</button>
+        </form>
+    </div>
+
+</div>
+
+
+<footer>
+    <table class="footer-table">
+        <tr>
+            <td><a href="{% url 'politicas' %}">Políticas de privacidad</a></td>
+            <td><a href="{% url 'faqs' %}">FAQs</a></td>
+            <td><a href="{% url 'home' %}#contactos">Contacto</a></td>
+            <td><a href="{% url 'home' %}">Home</a></td>
+        </tr>
+    </table>
+</footer>
+
+
+</body>
+
+</html>
+
+{% endblock %}

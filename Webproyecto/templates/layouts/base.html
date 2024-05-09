@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>django projects</title>
+    <link rel="stylesheet" href="{% static '/styles/main.css' %}">
+
+
+
+
+    
+     
+</head>
+<body>
+    
+        <div class="logo">
+            <div class="logoTotal">
+                <div class="logoIMG">
+                    <img src="{% static 'img/logo2.png' %}" alt=""  >
+                </div>
+                <div class="logoNOM">
+                    <p>IDSecure</p>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <div class="item">
+                    <a href="#nostros">NOSOTROS</a>
+                </div>
+                <div class="item">
+                    <a href="#objetivos">OBJETIVOS</a>
+                </div>
+                <div class="item">
+                    <a href="#servicios">SERVICIOS</a>
+                </div>
+            </nav>
+        </div>
+
+   
+    
+    <div class="cover">
+        <div id="three-container"></div>
+    </div>
+    
+        
+    
+    
+    
+        
+{% block content %}
+        
+{% endblock %}     
+
+
+    
+</body>
+
+</html>
